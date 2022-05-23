@@ -18,8 +18,8 @@ main{
 }
 main header div{
     background-color: #181E20;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 h1{
     text-shadow: 0px 0px 3.5px #F7DA84;
@@ -36,3 +36,21 @@ input:nth-of-type(1){
     height: 90px;
     border-radius: 10px;
 }
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+input[type=checkbox] {
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+    background: #1E2528;
+    border: 1px solid #424357;
+}
+input[type="checkbox"]:checked {
+    background: #F7DA84;
+    fill: #181E20;
+    margin:0px;
+    position: relative;
+  }

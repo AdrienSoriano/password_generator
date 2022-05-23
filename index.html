@@ -27,19 +27,58 @@
         <!-- Password length -->
         <section id="length" class="flex flex-col mt-5">
             <div class="text-[#F7DA84] flex">
+                <!-- Title of the section -->
                 <span class="iconify ml-4 text-3xl" data-icon="fa-solid:ruler-horizontal"></span>
-                <h2 class="ml-4 text-xl">Password length</h2>
+                <h2 class="ml-4 text-2xl">Password length</h2>
             </div>
-
+            <!-- Parameters for the password length -->
             <div class="mt-5">
                 <input class="ml-4" type="number" name="length" id="length">
                 <input id="slider" class="ml-4 w-2/3" type="range" min="4" max="32" value="16" />
             </div>
-
+            <!-- Recommandations -->
             <div class="info text-[#696B7C] self-center mt-5 flex">
                 <span class="iconify self-center text-6xl ml-4" data-icon="fa6-solid:circle-info"></span>
                 <p class="ml-2 self-center w-96">In France, ANSSI recommends a minimum length of 12 characters</p>
             </div>
+        </section>
+        <!-- Password options -->
+        <section id="options" class="flex flex-col mt-5">
+            <!-- Title of the section -->
+            <div class="text-[#F7DA84] flex">
+                <span class="iconify ml-4 text-3xl" data-icon="fa-solid:tools"></span>
+                <h2 class="ml-4 text-2xl">Password options</h2>
+            </div>
+            <!-- Parameters for the password characters -->
+            <div class="flex mt-5 text-[#FFFFFF]">
+                <div class="container flex ml-4">                   
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark text-xl">uppercase</span>
+                </div>
+                    
+                <div class="container flex">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark text-xl">lowercase</span>
+                </div>
+            </div>
+            <div class="flex mt-5 text-[#FFFFFF]">
+                <div class="container flex ml-4">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark text-xl">numbers</span>
+                </div>
+                    
+                <div class="container flex">
+                    <input type="checkbox">
+                    <span class="checkmark text-xl">special characters</span>
+                </div>
+            </div>
+            <!-- Recommandations -->
+            <div class="info text-[#696B7C] self-center mt-5 flex">
+                <span class="iconify self-center text-6xl ml-4" data-icon="fa6-solid:circle-info"></span>
+                <p class="ml-2 self-center w-96">In France, ANSSI recommends a password including upper and lower case letters, numbers and special characters</p>
+            </div>
+            <!-- Generate -->
+            <button class="bg-gradient-to-r from-[#FEFAF0] to-[#FDD77E] mt-5 w-48 rounded-lg font-bold self-center text-[#1E2528] p-2">Generate password</button>
         </section>
     </main>
 </body>
