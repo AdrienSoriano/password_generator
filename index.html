@@ -19,11 +19,28 @@
 <body>
     <main>
         <header>
-            <div class="text-[#F7DA84] flex justify-around align-center">
+            <div class="text-[#F7DA84] flex justify-around items-center">
                 <span class="iconify text-6xl" data-icon="fluent:password-16-regular"></span>
                 <h1 class="text-4xl">Password Generator</h1>
             </div>
         </header>
+        <!-- Password length -->
+        <section id="length" class="flex flex-col mt-5">
+            <div class="text-[#F7DA84] flex">
+                <span class="iconify ml-4 text-3xl" data-icon="fa-solid:ruler-horizontal"></span>
+                <h2 class="ml-4 text-xl">Password length</h2>
+            </div>
+
+            <div class="mt-5">
+                <input class="ml-4" type="number" name="length" id="length">
+                <input id="slider" class="ml-4 w-2/3" type="range" min="4" max="32" value="16" />
+            </div>
+
+            <div class="info text-[#696B7C] self-center mt-5 flex">
+                <span class="iconify self-center text-6xl ml-4" data-icon="fa6-solid:circle-info"></span>
+                <p class="ml-2 self-center w-96">In France, ANSSI recommends a minimum length of 12 characters</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

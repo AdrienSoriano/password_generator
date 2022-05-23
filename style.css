@@ -24,3 +24,15 @@ main header div{
 h1{
     text-shadow: 0px 0px 3.5px #F7DA84;
 }
+input:nth-of-type(1){
+    width: 10%;
+    border: 2px solid #424357;
+    border-radius: 5px;
+    background-color: #1E2528;
+}
+.info{
+    background-color: #242337;
+    width: 380px;
+    height: 90px;
+    border-radius: 10px;
+}
