@@ -24,7 +24,7 @@ main header div{
 h1{
     text-shadow: 0px 0px 3.5px #F7DA84;
 }
-input:nth-of-type(1){
+#length input:nth-of-type(1){
     width: 10%;
     border: 2px solid #424357;
     border-radius: 5px;
@@ -53,4 +53,8 @@ input[type="checkbox"]:checked {
     fill: #181E20;
     margin:0px;
     position: relative;
-  }
+}
+#result input::placeholder{
+    color: #FBF3B0;
+    padding-left: 20px;
+}
